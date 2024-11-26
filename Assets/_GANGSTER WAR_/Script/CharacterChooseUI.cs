@@ -42,13 +42,14 @@ public class CharacterChooseUI : MonoBehaviour
         {
             iconImg.color = Color.black;
             price.text = "Unlock lv " + gunParameter.unlockAtLevel;
-            GetComponent<Button>().interactable = false;
+            // GetComponent<Button>().interactable = false;
+            ownBtn.interactable = false;
         }
     }
 
     private void Update()
     {
-        ownBtn.interactable = GameManager.Instance.Player.upgradedCharacterID.gunType != gunParameter.gunType;
+        // ownBtn.interactable = GameManager.Instance.Player.upgradedCharacterID.gunType != gunParameter.gunType;
     }
 
     public void SetCharacter()
