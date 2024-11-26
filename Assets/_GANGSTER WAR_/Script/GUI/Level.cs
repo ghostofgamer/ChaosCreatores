@@ -6,7 +6,10 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Level : MonoBehaviour {
+public class Level : MonoBehaviour
+{
+	[SerializeField] private Sprite _lockSprite;
+	    
     public int world = 1;
     public int level = 1;
 	public bool isUnlock = false;

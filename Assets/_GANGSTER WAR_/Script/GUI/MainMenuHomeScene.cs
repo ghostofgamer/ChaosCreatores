@@ -146,7 +146,6 @@ PlayerPrefs.SetInt("Sound", GlobalValue.isSound ? 1 : 0);
         /*soundImage.sprite = GlobalValue.isSound ? soundImageOn : soundImageOff;
         musicImage.sprite = GlobalValue.isMusic ? musicImageOn : musicImageOff;*/
         
-        
         GlobalValue.isSound = soundValue==1? true : false;
         GlobalValue.isMusic = musicValue==1? true : false;
         
