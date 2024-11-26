@@ -9,6 +9,9 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour
 {
 	[SerializeField] private Sprite _lockSprite;
+	[SerializeField] private Sprite _unlockSprite;
+	[SerializeField] private Sprite _CurrentlevelSprite;
+	[SerializeField] private Image _levelImage;
 	    
     public int world = 1;
     public int level = 1;
@@ -51,17 +54,30 @@ public class Level : MonoBehaviour
         {
             if (GlobalValue.LevelPass + 1 == level)
             {
-                imgOpen.SetActive(true);
+	            _levelImage.sprite = _CurrentlevelSprite;
+	            numberTxt.GetComponent<Outline>().enabled = true;
+                // imgOpen.SetActive(true);
                 FindObjectOfType<MapControllerUI>().SetCurrentWorld(world);
             }
             else
             {
+	            _levelImage.sprite = _unlockSprite;
+	            numberTxt.GetComponent<Outline>().enabled = false;
                 starGroup.SetActive(true);
                 //numberTxt.gameObject.SetActive(false);
             }
 
-        }else
-            imgLock.SetActive(true);
+        }
+        else
+        {
+	        if (_levelImage != null)
+	        {
+		        numberTxt.GetComponent<Outline>().enabled = false;
+		        _levelImage.sprite = _lockSprite;
+	        }
+	        // imgLock.SetActive(true);
+        }
+            
 
 
        

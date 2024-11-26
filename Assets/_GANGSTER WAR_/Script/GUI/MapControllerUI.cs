@@ -1,9 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 using UnityEngine.UI;
 
 public class MapControllerUI : MonoBehaviour {
 //	public Transform BlockLevel;
+
+    public GameObject[] objects; // Массив объектов для переключения
+    private int currentIndex = 0;
+    public Image[] pageImages;
+    public Sprite _currentSprite;
+    public Sprite _notCurrentSprite;
+    public Text[] text;
+    public Color activeColor = Color.yellow; // Цвет активной страницы
+    public Color inactiveColor = Color.gray;
+    
 	public RectTransform BlockLevel;
 	public int howManyBlocks = 3;
 
@@ -17,6 +28,12 @@ public class MapControllerUI : MonoBehaviour {
 	void Start () {
         //SetDots();
         SetWorldNumber();
+        
+        for (int i = 0; i < objects.Length; i++)
+        {
+            objects[i].SetActive(i == currentIndex);
+        }
+        UpdatePageColors();
     }
 
     void SetWorldNumber()
@@ -64,15 +81,39 @@ public class MapControllerUI : MonoBehaviour {
 
     bool allowPressButton = true;
     public void Next()
-    {
-        if (allowPressButton)
+    { 
+             objects[currentIndex].SetActive(false);
+             currentIndex = (currentIndex + 1) % objects.Length;
+             objects[currentIndex].SetActive(true);
+             UpdatePageColors();
+        /*if (allowPressButton)
         {
             StartCoroutine(NextCo());
-        }
+        }*/
     }
-
+    
+    private void UpdatePageColors()
+    {
+        // Обновляем цвета изображений в зависимости от текущего индекса
+        for (int i = 0; i < pageImages.Length; i++)
+        {
+            // pageImages[i].color = (i == currentIndex) ? activeColor : inactiveColor;
+            pageImages[i].sprite = (i == currentIndex) ? _currentSprite : _notCurrentSprite;
+        }
+        for (int i = 0; i < pageImages.Length; i++)
+        {
+            text[i].GetComponent<Outline>().enabled = (i != currentIndex);
+        }
+        
+    }
+    
     IEnumerator NextCo()
     {
+        
+       
+        
+        
+        
         allowPressButton = false;
 
         SoundManager.Click();
@@ -113,10 +154,15 @@ public class MapControllerUI : MonoBehaviour {
 
     public void Pre()
     {
-        if (allowPressButton)
+        objects[currentIndex].SetActive(false);
+        currentIndex = (currentIndex - 1 + objects.Length) % objects.Length;
+        objects[currentIndex].SetActive(true);
+        
+        UpdatePageColors();
+        /*if (allowPressButton)
         {
             StartCoroutine(PreCo());
-        }
+        }*/
     }
 
     IEnumerator PreCo()
