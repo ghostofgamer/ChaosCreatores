@@ -46,6 +46,7 @@
     <Analyzer Include="D:\Program Files\UnityHub\EditorUnity\6000.0.22f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_GANGSTER WAR_\Script\New\ShopContent\ChangeShopButton.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\RotateAround.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\ShopCharacterUpgrade.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\GUI\Tutorial.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="Assets\_GANGSTER WAR_\Script\SimpleProjectile.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\GUI\WeaponEffect.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\RocketBtn.cs" />
+    <Compile Include="Assets\_GANGSTER WAR_\Script\New\ShopContent\PanelShop.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Prefab\UI\Shop\ShopMenuPopupUI.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\LevelWave.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\GlobalValue.cs" />
