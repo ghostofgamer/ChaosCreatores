@@ -54,6 +54,8 @@ public class EnemyMeleeAttack : MonoBehaviour {
     public void Check4Hit() {
         RaycastHit2D[] hits = Physics2D.CircleCastAll(checkPoint.position, radiusCheck * 1.2f, Vector2.zero, 0, targetLayer);
         int counterHit = 0;
+        
+        Debug.Log("HITS " + hits);
         if (hits.Length > 0)
         {
             foreach (var hit in hits)
