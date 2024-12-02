@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunType: 1
-  unlockAtLevel: 1
+  unlockAtLevel: 0
   UpgradeSteps:
   - price: 0
     damage: 8

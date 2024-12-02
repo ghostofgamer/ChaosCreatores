@@ -303,7 +303,7 @@ MonoBehaviour:
     m_Bits: 256
   checkPoint: {fileID: 3548035050366363329}
   firePoint: {fileID: 7713854380231573076}
-  soundShoot: {fileID: 8300000, guid: a9d9c0c06b2c8c04cb78ce6a54e2a048, type: 3}
+  soundShoot: {fileID: 8300000, guid: 2aad3d7cd6f8faf4d8f2cf2c169f11af, type: 3}
   soundShootVolume: 0.5
   shootingPoint: {fileID: 7713854380231573076}
   damage: 30
