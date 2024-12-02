@@ -66,7 +66,10 @@
     <Compile Include="Assets\_GANGSTER WAR_\Editor\SpawnSystemHelperEditor.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Editor\GameModeEditor.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Editor\ReadOnlyDrawer.cs" />
+    <Compile Include="Assets\FlutterUnityIntegration\Editor\XCodePostBuild.cs" />
+    <Compile Include="Assets\FlutterUnityIntegration\Editor\SweetShellHelper.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Editor\PlayerControllerEditor.cs" />
+    <Compile Include="Assets\FlutterUnityIntegration\Editor\Build.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

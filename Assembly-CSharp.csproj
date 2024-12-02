@@ -75,6 +75,7 @@
     <Compile Include="Assets\_GANGSTER WAR_\Script\Grenade.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\ArrowProjectile.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\IListener.cs" />
+    <Compile Include="Assets\FlutterUnityIntegration\NativeAPI.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Prefab\UI\FloatingText.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\GiveCoinWhenDie.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Prefab\UI\FloatingTextManager.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Assets\_GANGSTER WAR_\Script\GUI\MenuManager.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\GUI\Level.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\Purchaser.cs" />
+    <Compile Include="Assets\FlutterUnityIntegration\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\SmartEnemy\EnemyMeleeAttack.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\UpdateBackground.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\GUI\MapControllerUI.cs" />
@@ -145,6 +147,7 @@
     <Compile Include="Assets\_GANGSTER WAR_\Script\UpgradedCharacterParameter.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\IAPItem.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Prefab\UI\Shop\ShopManager.cs" />
+    <Compile Include="Assets\FlutterUnityIntegration\UnityMessageManager.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\UpgradeWall.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\SmartEnemy\ICanFreeze.cs" />
     <Compile Include="Assets\_GANGSTER WAR_\Script\PlayerController.cs" />
@@ -159,7 +162,16 @@
     <Compile Include="Assets\_GANGSTER WAR_\Prefab\UI\AnimDisableAuto.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\FlutterUnityIntegration\JsonDotNet\link.xml" />
     <None Include="Assets\_GANGSTER WAR_\Readme first.txt" />
+    <None Include="Assets\FlutterUnityIntegration\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.dll" />
+    <None Include="Assets\FlutterUnityIntegration\README.txt" />
+    <None Include="Assets\FlutterUnityIntegration\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll.txt" />
+    <None Include="Assets\FlutterUnityIntegration\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
+    <None Include="Assets\FlutterUnityIntegration\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
+    <None Include="Assets\FlutterUnityIntegration\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
+    <None Include="Assets\FlutterUnityIntegration\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.dll.txt" />
+    <None Include="Assets\FlutterUnityIntegration\link.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
